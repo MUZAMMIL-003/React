@@ -16,6 +16,13 @@ function App() {
   const deleteCounter = ()=>{
     counterFunc(counter - 1);
   }
+
+  const [liked, setLiked] = useState(true);
+
+  function handleChange(e) {
+    setLiked(e.target.checked);
+  }
+
   return (
     <>
     {/* hero section  */}
@@ -32,6 +39,15 @@ function App() {
               {data.heading1}
               {data.heading2}
             </h1>
+            <label>
+        <input
+          type="checkbox"
+          checked={liked}
+          onChange={handleChange}
+        />
+       
+      </label>
+      <h2>You {liked ? 'liked' : 'did not like'} this.</h2>
             <p className="mb-8 leading-relaxed">
            {data.description}
             </p>
