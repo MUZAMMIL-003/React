@@ -8,6 +8,10 @@ import ButtonFunc from './components/Button'
 
 
 function App() {
+  const [counter, counterFunc] = useState(0)
+  const updatecounter = ()=>{
+    counterFunc(counter + 1);
+  }
   return (
     <>
     {/* hero section  */}
@@ -27,13 +31,16 @@ function App() {
             <p className="mb-8 leading-relaxed">
            {data.description}
             </p>
-            <div className="flex justify-center">
-              <button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
+            <div className="flex justify-center gap-4">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              Counter :
+            </h1>
+              <button onClick={updatecounter} className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
                 Button
               </button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
-              </button>
+              <div className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                {counter}
+              </div>
                 
             </div>
           </div>
