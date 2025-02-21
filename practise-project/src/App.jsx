@@ -9,11 +9,11 @@ import ButtonFunc from './components/Button'
 
 function App() {
   const [counter, counterFunc] = useState(0)
- 
-  const updatecounter = ()=>{
+
+  const updatecounter = () => {
     counterFunc(counter + 1);
   }
-  const deleteCounter = ()=>{
+  const deleteCounter = () => {
     counterFunc(counter - 1);
   }
 
@@ -25,13 +25,13 @@ function App() {
 
   return (
     <>
-    {/* hero section  */}
+      {/* hero section  */}
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <img
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
-            src= {data.src}
+            src={data.src}
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
@@ -40,21 +40,21 @@ function App() {
               {data.heading2}
             </h1>
             <label>
-        <input
-          type="checkbox"
-          checked={liked}
-          onChange={handleChange}
-        />
-       
-      </label>
-      <h2>You {liked ? 'liked' : 'did not like'} this.</h2>
+              <input
+                type="checkbox"
+                checked={liked}
+                onChange={handleChange}
+              />
+
+            </label>
+            <h2>You {liked ? 'liked' : 'did not like'} this.</h2>
             <p className="mb-8 leading-relaxed">
-           {data.description}
+              {data.description}
             </p>
             <div className="flex justify-center gap-4">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Counter :
-            </h1>
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                Counter :
+              </h1>
               <button onClick={updatecounter} className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
                 Add
               </button>
@@ -64,7 +64,7 @@ function App() {
               <button onClick={deleteCounter} className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
                 Less
               </button>
-                
+
             </div>
           </div>
         </div>
