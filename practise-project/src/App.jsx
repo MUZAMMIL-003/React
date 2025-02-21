@@ -9,8 +9,12 @@ import ButtonFunc from './components/Button'
 
 function App() {
   const [counter, counterFunc] = useState(0)
+ 
   const updatecounter = ()=>{
     counterFunc(counter + 1);
+  }
+  const deleteCounter = ()=>{
+    counterFunc(counter - 1);
   }
   return (
     <>
@@ -36,11 +40,14 @@ function App() {
               Counter :
             </h1>
               <button onClick={updatecounter} className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
-                Button
+                Add
               </button>
               <div className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 {counter}
               </div>
+              <button onClick={deleteCounter} className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
+                Less
+              </button>
                 
             </div>
           </div>
