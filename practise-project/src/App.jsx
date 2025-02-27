@@ -6,7 +6,7 @@ import './App.css'
 import data from './components/data'
 import ButtonFunc from './components/Button'
 
-
+///////////// Counter //////////
 function App() {
   const [counter, counterFunc] = useState(0)
 
@@ -24,10 +24,23 @@ function App() {
   }
 
 
+  ////////////////Input //////////////////////
+
   const [userName , setUserName] = useState("Abc")
   let handleInputChange = (e) =>setUserName(e.target.value);
   console.log(userName)
   
+
+
+//////////////// Transections //////////////////////////
+const [amount , setAmount] = useState(0)
+const [type , setType] = useState("income")
+const [Transaction , setTransactions] = useState([])
+
+let SubmitBttn = ()=>{
+  console.log(input.value)
+  console.log(select.option.value)
+}
 
   return (
     <>
@@ -79,7 +92,18 @@ function App() {
             <div>
               <input value={userName} type="text" onChange={ handleInputChange } className='border border-blue-400' />
             </div>
-            <h5>"Open Console To See Results!"</h5>
+            <h5>"Open Console To See Results!"</h5> 
+
+            
+            <h1>TranSactions</h1>
+            <input type="text" value={type} className='border border-yellow-500' />
+            <select   value={amount}name="" id=""  className='border border-yellow-900'>
+              <option>Expense</option>
+              <option >Income</option>
+            </select>
+            <button type='Submit' onClick={SubmitBttn} >Submit</button>
+           
+
           </center>
         </div>
       </section>
