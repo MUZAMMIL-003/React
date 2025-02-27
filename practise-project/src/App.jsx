@@ -39,6 +39,8 @@ function App() {
 
   let SubmitBttn = () => {
     setTransactions([...Transaction,{ amount,type}])
+    setAmount("")
+    setType("income")
   }
 console.log(Transaction)
   return (
@@ -99,7 +101,7 @@ console.log(Transaction)
 
             <div>
             <h1>TranSactions</h1>
-            <input type="number" value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
+            <input type="number" placeholder='Add Your Amount ' value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
             <select value={type} name="" id="" className='border border-yellow-900'onChange={(e) => setType(e.target.value)} >
               <option>Expense</option>
               <option >income</option>
@@ -111,7 +113,7 @@ console.log(Transaction)
               {
                 Transaction.map((data ,index) =>{
                   return <div className='flex'>
-                    <h1 className='font-bold underline text-3xl w-60'>{index+1}{")"}  {data.amount}</h1>
+                    <h1 className='font-bold underline text-3xl w-60'> {index+1} {")"}  {data.amount}</h1>
                     <h1 className={`font-bold underline text-3xl ${data.type === "income" ? "text-green-500" :" text-red-500"} `}>{data.type}</h1>
                   </div>
                 })
