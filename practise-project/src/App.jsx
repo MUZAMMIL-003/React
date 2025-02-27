@@ -87,17 +87,21 @@ function App() {
             </div>
           </div>
           <br /><br />
+
+
           <center>
             <h2>Usage of UseState With Input </h2><br />
             <div>
-              <input value={userName} type="text" onChange={handleInputChange} className='border border-blue-400' />
+            <input value={userName} type="text" onChange={handleInputChange} className='border border-blue-400' />
             </div>
             <h5>"Open Console To See Results!"</h5>
 
 
+
+
             <h1>TranSactions</h1>
-            <input type="text" value={amount} className='border border-yellow-500' />
-            <select value={type} name="" id="" className='border border-yellow-900'>
+            <input type="text" value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
+            <select value={type} name="" id="" className='border border-yellow-900'onChange={(e) => setType(e.target.value)} >
               <option>Expense</option>
               <option >Income</option>
             </select>
