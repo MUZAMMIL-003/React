@@ -38,8 +38,8 @@ const [type , setType] = useState("income")
 const [Transaction , setTransactions] = useState([])
 
 let SubmitBttn = ()=>{
-  console.log(input.value)
-  console.log(select.option.value)
+  console.log(amount)
+  console.log(type)
 }
 
   return (
@@ -96,8 +96,8 @@ let SubmitBttn = ()=>{
 
             
             <h1>TranSactions</h1>
-            <input type="text" value={type} className='border border-yellow-500' />
-            <select   value={amount}name="" id=""  className='border border-yellow-900'>
+            <input type="text" value={amount} className='border border-yellow-500' />
+            <select   value={type}name="" id=""  className='border border-yellow-900'>
               <option>Expense</option>
               <option >Income</option>
             </select>
