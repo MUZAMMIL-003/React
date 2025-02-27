@@ -23,6 +23,12 @@ function App() {
     setLiked(e.target.checked);
   }
 
+
+  const [userName , setUserName] = useState("Abc")
+  let handleInputChange = (e) =>setUserName(e.target.value);
+  console.log(userName)
+  
+
   return (
     <>
       {/* hero section  */}
@@ -67,6 +73,14 @@ function App() {
 
             </div>
           </div>
+          <br /><br />
+          <center>
+            <h2>Usage of UseState With Input </h2><br />
+            <div>
+              <input value={userName} type="text" onChange={ handleInputChange } className='border border-blue-400' />
+            </div>
+            <h5>"Open Console To See Results!"</h5>
+          </center>
         </div>
       </section>
 
