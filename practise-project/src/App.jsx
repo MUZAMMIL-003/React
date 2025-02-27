@@ -26,9 +26,9 @@ function App() {
 
   ////////////////Input //////////////////////
 
-  const [userName, setUserName] = useState("Abc")
-  let handleInputChange = (e) => setUserName(e.target.value);
-  console.log(userName)
+  // const [userName, setUserName] = useState("Abc")
+  // let handleInputChange = (e) => setUserName(e.target.value);
+  // console.log(userName)
 
 
 
@@ -38,10 +38,9 @@ function App() {
   const [Transaction, setTransactions] = useState([])
 
   let SubmitBttn = () => {
-    console.log(amount)
-    console.log(type)
+    setTransactions([...Transaction,{ amount,type}])
   }
-
+console.log(Transaction)
   return (
     <>
       {/* hero section  */}
@@ -92,7 +91,7 @@ function App() {
           <center>
             <h2>Usage of UseState With Input </h2><br />
             <div>
-            <input value={userName} type="text" onChange={handleInputChange} className='border border-blue-400' />
+            {/* <input value={userName} type="text" onChange={handleInputChange} className='border border-blue-400' /> */}
             </div>
             <h5>"Open Console To See Results!"</h5>
 
@@ -100,7 +99,7 @@ function App() {
 
 
             <h1>TranSactions</h1>
-            <input type="text" value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
+            <input type="number" value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
             <select value={type} name="" id="" className='border border-yellow-900'onChange={(e) => setType(e.target.value)} >
               <option>Expense</option>
               <option >Income</option>
