@@ -97,15 +97,26 @@ console.log(Transaction)
 
 
 
-
+            <div>
             <h1>TranSactions</h1>
             <input type="number" value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
             <select value={type} name="" id="" className='border border-yellow-900'onChange={(e) => setType(e.target.value)} >
               <option>Expense</option>
-              <option >Income</option>
+              <option >income</option>
             </select>
             <button type='Submit' onClick={SubmitBttn} >Submit</button>
+            </div>
 
+            <div>
+              {
+                Transaction.map((data ,index) =>{
+                  return <div className='flex'>
+                    <h1 className='font-bold underline text-3xl w-60'>{index+1}{")"}  {data.amount}</h1>
+                    <h1 className={`font-bold underline text-3xl ${data.type === "income" ? "text-green-500" :" text-red-500"} `}>{data.type}</h1>
+                  </div>
+                })
+              }
+            </div>
 
           </center>
         </div>
