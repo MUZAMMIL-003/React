@@ -38,11 +38,11 @@ function App() {
   const [Transaction, setTransactions] = useState([])
 
   let SubmitBttn = () => {
-    setTransactions([...Transaction,{ amount,type}])
+    setTransactions([...Transaction, { amount, type }])
     setAmount("")
     setType("income")
   }
-console.log(Transaction)
+  console.log(Transaction)
   return (
     <>
       {/* hero section  */}
@@ -93,28 +93,28 @@ console.log(Transaction)
           <center>
             <h2>Usage of UseState With Input </h2><br />
             <div>
-            {/* <input value={userName} type="text" onChange={handleInputChange} className='border border-blue-400' /> */}
+              {/* <input value={userName} type="text" onChange={handleInputChange} className='border border-blue-400' /> */}
             </div>
             <h5>"Open Console To See Results!"</h5>
 
 
 
             <div>
-            <h1>TranSactions</h1>
-            <input type="number" placeholder='Add Your Amount ' value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)}/>
-            <select value={type} name="" id="" className='border border-yellow-900'onChange={(e) => setType(e.target.value)} >
-              <option>Expense</option>
-              <option >income</option>
-            </select>
-            <button type='Submit' onClick={SubmitBttn} >Submit</button>
+              <h1>TranSactions</h1>
+              <input type="number" placeholder='Add Your Amount ' value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)} />
+              <select value={type} name="" id="" className='border border-yellow-900' onChange={(e) => setType(e.target.value)} >
+                <option>Expense</option>
+                <option >income</option>
+              </select>
+              <button type='Submit' onClick={SubmitBttn} >Submit</button>
             </div>
 
             <div>
               {
-                Transaction.map((data ,index) =>{
+                Transaction.map((data, index) => {
                   return <div className='flex'>
-                    <h1 className='font-bold underline text-3xl w-60'> {index+1} {")"}  {data.amount}</h1>
-                    <h1 className={`font-bold underline text-3xl ${data.type === "income" ? "text-green-500" :" text-red-500"} `}>{data.type}</h1>
+                    <h1 className='font-bold underline text-3xl w-60'> {index + 1} {")"}  {data.amount}</h1>
+                    <h1 className={`font-bold underline text-3xl ${data.type === "income" ? "text-green-500" : " text-red-500"} `}>{data.type}</h1>
                   </div>
                 })
               }
