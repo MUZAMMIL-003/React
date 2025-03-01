@@ -100,7 +100,6 @@ function App() {
             <h5>"Open Console To See Results!"</h5>
 
 
-
             <div>
               <h1>TranSactions</h1>
               <input type="number" placeholder='Add Your Amount ' value={amount} className='border border-yellow-500' onChange={(e) => setAmount(e.target.value)} />
