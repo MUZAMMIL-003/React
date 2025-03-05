@@ -124,7 +124,7 @@ function App() {
       </section>
 
 
-              Welcome Bac
+              Welcome
     </>
   )
 }
