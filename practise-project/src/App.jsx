@@ -25,7 +25,7 @@ function App() {
   }
 
 
-  
+
   ////////////////Input //////////////////////
 
   // const [userName, setUserName] = useState("Abc")
@@ -124,7 +124,7 @@ function App() {
           </center>
         </div>
       </section>
-     </>
+    </>
   )
 }
 
