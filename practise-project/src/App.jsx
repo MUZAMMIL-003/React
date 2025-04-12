@@ -50,10 +50,6 @@ function App() {
   return (
     <>
       {/* hero section  */}
-      <section>
-    <Header />
-
-      </section>
       {/*//////////////////////////////// Header section///////////////////////////////// */}
       <section>
       <header className="text-gray-400 bg-gray-900 body-font">
