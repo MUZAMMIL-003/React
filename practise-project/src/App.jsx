@@ -3,7 +3,6 @@ import './App.css'
 
 import data from './components/data'
 import ButtonFunc from './components/Button'
-import Header from './components/header'
 
 
 ///////////// Counter //////////
