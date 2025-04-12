@@ -3,6 +3,7 @@ import './App.css'
 
 import data from './components/data'
 import ButtonFunc from './components/Button'
+import Navbar from './components/Navbar'
 
 
 ///////////// Counter //////////
@@ -51,7 +52,8 @@ function App() {
       {/* hero section  */}
       {/*//////////////////////////////// Header section///////////////////////////////// */}
       <section>
-      <header className="text-gray-400 bg-gray-900 body-font">
+        <Navbar />
+      {/* <header className="text-gray-400 bg-gray-900 body-font">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
       <svg
@@ -89,7 +91,7 @@ function App() {
       </svg>
     </button>
   </div>
-</header>
+</header> */}
 
       </section>
       <section className="text-gray-600 body-font">
