@@ -3,6 +3,7 @@ import './App.css'
 
 import data from './components/data'
 import ButtonFunc from './components/Button'
+import Header from './components/header'
 
 
 ///////////// Counter //////////
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <>
+      <Header />
       {/* hero section  */}
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
