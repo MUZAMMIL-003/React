@@ -130,7 +130,6 @@ function App() {
             </div>
           </center>
 
-
         </div>
       </section>
 
