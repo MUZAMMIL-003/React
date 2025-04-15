@@ -31,9 +31,9 @@ function App() {
   // const [userName, setUserName] = useState("Abc")
   // let handleInputChange = (e) => setUserName(e.target.value);
   // console.log(userName)
-  
-  
-  
+
+
+
   //////////////// Transections //////////////////////////
   const [amount, setAmount] = useState(0)
   const [type, setType] = useState("income")
@@ -132,7 +132,7 @@ function App() {
 
 
 
-          
+
         </div>
       </section>
 
