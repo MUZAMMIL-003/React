@@ -49,6 +49,7 @@ function App() {
 
   return (
     <>
+    
       {/* hero section  */}
       {/*//////////////////////////////// Header section///////////////////////////////// */}
       <section>
