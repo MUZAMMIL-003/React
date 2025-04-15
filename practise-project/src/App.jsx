@@ -117,7 +117,7 @@ function App() {
               <button type='Submit' onClick={SubmitBttn} >Submit</button>
             </div>
 
-            
+
             <div>
               {
                 Transaction.map((data, index) => {
@@ -129,7 +129,6 @@ function App() {
               }
             </div>
           </center>
-
 
 
 
