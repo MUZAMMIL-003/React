@@ -13,6 +13,7 @@ function App() {
   const updatecounter = () => {
     counterFunc(counter + 1);
   }
+  
   const deleteCounter = () => {
     counterFunc(counter - 1);
   }
