@@ -32,7 +32,6 @@ function App() {
   // console.log(userName)
 
 
-
   //////////////// Transections //////////////////////////
   const [amount, setAmount] = useState(0)
   const [type, setType] = useState("income")
