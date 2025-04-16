@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-
 import data from './components/data'
 import ButtonFunc from './components/Button'
 import Navbar from './components/Navbar'
