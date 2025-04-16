@@ -43,7 +43,6 @@ function App() {
   }
   console.log(Transaction)
 
-
   return (
     <>
 
