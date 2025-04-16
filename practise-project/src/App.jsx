@@ -13,7 +13,7 @@ function App() {
   const updatecounter = () => {
     counterFunc(counter + 1);
   }
-  
+
   const deleteCounter = () => {
     counterFunc(counter - 1);
   }
@@ -23,7 +23,6 @@ function App() {
   function handleChange(e) {
     setLiked(e.target.checked);
   }
-
 
 
   ////////////////Input //////////////////////
