@@ -4,7 +4,6 @@ import {Link} from 'react-router'
 const Navbar = () => {
     return(
         <>
-
           <nav>
             <ul className="flex justify-around bg-gray-800 text-white p-4 cursor-pointer">
               <li> <link to={"/"} >Home</link></li>
