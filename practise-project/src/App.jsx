@@ -127,6 +127,28 @@ function App() {
         </div>
       </section>
 
+      <section>
+        <div>
+          <h1>Increament Or Decreament with REDUX</h1>
+          <h1>{count}</h1>
+          <button onClick={increment}>Increment</button>
+          <button onClick={decrement}>Decrement</button>
+          <button onClick={largeIncreament}>Large Increment</button>
+          <button onClick={reset}>Reset</button>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
     </>
   )
 }
